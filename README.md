@@ -1,4 +1,4 @@
-=== Setup del database ===
+# Setup del database
 1. Le credenziali per il database si possono modificare nel file "functions.php"
 2. Creare un database chiamato "mensa_dei_terrogatti_2"
 3. Creare una tabella "menu" con colonne "id" (int, auto increment), "category" (varchar 255), "name" (varchar 255), "price" (int)
