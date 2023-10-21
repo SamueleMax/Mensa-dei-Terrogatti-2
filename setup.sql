@@ -1,3 +1,19 @@
+CREATE TABLE menu (
+    id int NOT NULL AUTO_INCREMENT,
+    category varchar(255),
+    name varchar(255),
+    price int,
+    PRIMARY KEY (id)
+);
+CREATE TABLE orders (
+    username varchar(255),
+    items JSON
+);
+CREATE TABLE statuses (
+    status varchar(255),
+    value boolean
+);
+INSERT INTO statuses (status, value) VALUES ("orders_open", false);
 INSERT INTO menu (category, name, price) VALUES
 ("Focacce", "Focaccia vuota", 100),
 ("Focacce", "Focaccia vuota grande", 150),
@@ -34,3 +50,4 @@ INSERT INTO menu (category, name, price) VALUES
 ("Bibite", "The limone 1/2 lt", 100),
 ("Bibite", "Acqua naturale", 40),
 ("Bibite", "Acqua gasata", 40);
+
